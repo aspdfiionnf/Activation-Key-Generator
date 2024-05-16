@@ -1,5 +1,6 @@
 #include "CppUnitTest.h"
 #include "keygen.hpp"
+#include "input_utils.hpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
