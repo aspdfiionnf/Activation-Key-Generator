@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "Activation Key Generator"
+    </assembly>
+    <members>
+        <member name="M:main">
+            <summary>Main program algorithm</summary>
+        </member>
+        <member name="M:input_utils.isNumber(std.basic_string&lt;System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte,std.char_traits{System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte},std.allocator&lt;System.SByte!System.Runtime.CompilerServices.IsSignUnspecifiedByte&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Checks if the passed string <c>s</c> is a number</summary>
+            <param name="s">The string to be checked</param>
+            <returns>
+                <c>true</c> if <c>s</c> is a number. Otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:input_utils.clearConsole">
+            <summary>Clears the console</summary>
+        </member>
+        <member name="M:keygen.nextKey(System.Int32!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>Calculates the next key value based on the input number <c>x</c> by adding a checksum to it</summary>
+            <param name="x">Positive integer for which the checksum will be generated</param>
+            <returns>Activation key. In case of invalid parameter <c>x</c> returns -1</returns>
+        </member>
+        <member name="M:keygen.generateControlSum(System.Int32)">
+            <summary>Generates a checksum for a number <c>x</c></summary>
+            <param name="x">Positive integer for which the checksum will be generated</param>
+            <returns>Checksum. In case of an invalid parameter <c>x</c> returns -1</returns>
+        </member>
+    </members>
+</doc>
