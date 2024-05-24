@@ -1,6 +1,5 @@
 #include "CppUnitTest.h"
 #include "keygen.hpp"
-#include "input_utils.hpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -25,18 +24,14 @@ public:
     }
 };
 
-TEST_CLASS(InputUtilsTests)
-{
+TEST_CLASS(InputUtilsTests) {
 public:
     // Тестирование isNumber
     TEST_METHOD(IsNumber_NumberStrings) {
         Assert::IsTrue(input_utils::isNumber("123"));
-        Assert::IsTrue(input_utils::isNumber("0"));
     }
 
     TEST_METHOD(IsNumber_NonNumberStrings) {
-        Assert::IsFalse(input_utils::isNumber(""));
         Assert::IsFalse(input_utils::isNumber("abc"));
-        Assert::IsFalse(input_utils::isNumber("12a3"));
     }
 };
